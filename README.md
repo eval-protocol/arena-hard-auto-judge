@@ -1,0 +1,1 @@
+# arena-hard-auto-judge
