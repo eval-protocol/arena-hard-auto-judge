@@ -29,7 +29,6 @@ def langfuse_data_generator():
     )
 
 
-@pytest.mark.skipif(os.environ.get("CI") == "true", reason="Skip in CI")
 @pytest.mark.parametrize(
     "completion_params",
     [
