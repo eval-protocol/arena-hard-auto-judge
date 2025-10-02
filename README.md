@@ -1,6 +1,10 @@
 <h1 align="center">Arena-Hard-Auto Judge</h1>
 
 <p align="center">
+  <img alt="Arena-Hard-Auto Judge Flow" src="assets/flow-diagram.png">
+</p>
+
+<p align="center">
     Build a data-driven model leaderboard from your existing LLM traces. No hand-written evals or ground truth required.
 </p>
 
@@ -90,7 +94,7 @@ Click the aggregate scores link to view your model leaderboard with:
 - Individual judgment details
 
 <p align="center">
-  <img alt="Arena-Hard-Auto Judge - Build a data-driven model leaderboard" src="quickstart-leaderboard.avif">
+  <img alt="Arena-Hard-Auto Judge - Build a data-driven model leaderboard" src="assets/quickstart-leaderboard.png">
 </p>
 
 ## How It Works
@@ -106,6 +110,6 @@ This approach has been validated against human preferences and correlates well w
 
 ## Learn More
 
-- [Eval Protocol Documentation](https://docs.eval-protocol.com)
+- [Eval Protocol Documentation](https://evalprotocol.io/introduction)
 - [Arena-Hard-Auto Paper](https://arxiv.org/abs/2406.11939)
 - [LiteLLM Supported Models](https://docs.litellm.ai/docs/providers)
