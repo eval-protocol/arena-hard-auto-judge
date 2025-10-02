@@ -55,8 +55,6 @@ python -m pytest quickstart.py -vs
 
 ### What's Happening
 
-The example test in [`quickstart.py`](quickstart.py) will:
-
 1. **Fetch traces** from your Langfuse instance
 2. **Extract test cases** from multi-turn conversations (each assistant response becomes a test)
 3. **Run three models** in parallel: GPT-4.1 and two Fireworks models

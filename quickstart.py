@@ -23,7 +23,7 @@ def langfuse_data_generator():
     adapter = create_langfuse_adapter()
     return adapter.get_evaluation_rows(
         to_timestamp=datetime(2025, 9, 12, 0, 11, 18),
-        limit=1,
+        limit=100,
         sleep_between_gets=3.0,
         max_retries=5,
     )
@@ -52,7 +52,7 @@ def langfuse_data_generator():
         preprocess_fn=multi_turn_assistant_to_ground_truth,
     ),
     rollout_processor=SingleTurnRolloutProcessor(),
-    max_concurrent_evaluations=8,
+    max_concurrent_evaluations=16,
 )
 async def test_llm_judge(row: EvaluationRow) -> EvaluationRow:
     return await aha_judge(row)
